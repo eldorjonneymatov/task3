@@ -7,6 +7,7 @@ from .schema import swagger_urlpatterns
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("accounts/", include('apps.users.urls')),
     path("announcements/", include('apps.car_announcements.api.urls'))
 ]
 
